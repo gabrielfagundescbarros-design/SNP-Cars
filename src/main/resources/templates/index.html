@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>
-            Pagina Principal
-        </title>
-        <link rel="stylesheet" th:href="@{/css/index.css}">
-        <script th:src="@{/js/index.js}"></script>
-    </head>
-    <body>
-        <h1>
-            EXEMPLO PAGINA!
-        </h1>
-        <button onclick="ola()">Ola</button>
-        <img th:src="@{/img/pikachu.jpg}" alt="Um pikachu">
-        <ul>
-            <li><a th:href="@{/pagina1}">PAGINA 1</a></li>
-            <li><a th:href="@{/pagina2}">PAGINA 2</a></li>
-            <li><a th:href="@{/pagina3}">PAGINA 3</a></li>
-            <li><a th:href="@{/calc}">Calculadora</a></li>
-        </ul>
-    </body>
+<head>
+    <title>SNP Cars</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="logo dynalight-regular">SNP CARS</h1>
+            <p class="subtitle-big">Encontre seu carro ideal</p>
+            <p class="subtitle-small">Qualidade, confiança e procedência</p>
+        </div>
+    </section>
+
+    <!-- SECTION DE FEATURES -->
+    <section class="features">
+        
+        <div class="feature-card">
+            <div class="icon-circle">🚗</div>
+            <h3>Seleção Premium</h3>
+            <p>Carros revisados e com histórico garantido.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon-circle">⭐</div>
+            <h3>Confiança & Transparência</h3>
+            <p>Você sabe exatamente o que está comprando.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon-circle">💰</div>
+            <h3>Melhor Preço</h3>
+            <p>Negociações justas e acessíveis ao seu bolso.</p>
+        </div>
+
+    </section>
+
+</body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-logo dynalight-regular">SNP CARS</div>
+
+    <nav class="nav-links">
+        <a th:href="@{/}">Início</a>
+        <a th:href="@{/catalogo}">Catálogo</a>
+        <a th:href="@{/sobre}">Sobre Nós</a>
+        <a th:href="@{/contato}" class="nav-button">Contato</a>
+    </nav>
+</header>
+
 </html>
