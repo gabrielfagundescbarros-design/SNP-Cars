@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - SNP Cars</title>
+    <link rel="stylesheet" th:href="@{/css/catalogo.css}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-logo dynalight-regular">SNP CARS</div>
+    <nav class="nav-links">
+        <a th:href="@{/}">Início</a>
+        <a th:href="@{/catalogo}">Catálogo</a>
+        <a th:href="@{/vendedores}">Vendedores</a>
+        <a th:href="@{/contato}" class="nav-button">Contato</a>
+    </nav>
+</header>
+
+<!-- HEADER DA PÁGINA -->
+<section class="catalogo-header">
+    <h2>Nosso Portfólio</h2>
+    <p>Confira nossa seleção exclusiva de carros usados de luxo</p>
+</section>
+
+<!-- GRID DE CARROS -->
+<section class="cars-grid">
+    <!-- Exemplo de card de carro -->
+    <div class="car-card">
+        <div class="car-img">
+            <img th:src="@{/img/golBola.jpg}" alt="Carro 1">
+        </div>
+        <div class="car-info">
+            <h3 class="price">R$ 50.000</h3>
+            <h4 class="car-name">Volkswagen Gol Bola</h4>
+            <p><span class="icon-placeholder">🗓️</span><strong>Ano:</strong> 2010</p>
+            <p><span class="icon-placeholder">🛣️</span><strong>Km:</strong> 250.000 km</p>
+            <p><span class="icon-placeholder">🎨</span><strong>Cor:</strong> Azul Meia Noite</p>
+            <p><span class="icon-placeholder">⚡</span><strong>Combustível:</strong> Metanol</p>
+            <button>Ver Detalhes</button>
+        </div>
+    </div>
+
+    <!-- Repetir cards conforme necessário -->
+    <div class="car-card">
+        <div class="car-img">
+            <img th:src="@{/img/chevetao.jpg}" alt="Carro 2">
+        </div>
+        <div class="car-info">
+            <h3 class="price">R$ 40.000</h3>
+            <h4 class="car-name">Chevrolet Chevette</h4>
+            <p><span class="icon-placeholder">🗓️</span><strong>Ano:</strong> 1979</p>
+            <p><span class="icon-placeholder">🛣️</span><strong>Km:</strong> 420.000 km</p>
+            <p><span class="icon-placeholder">🎨</span><strong>Cor:</strong> Verde Vômito</p>
+            <p><span class="icon-placeholder">⚡</span><strong>Combustível:</strong> Gasolina Batizada</p>
+            <button>Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <div class="car-img">
+            <img th:src="@{/img/jetta.jpg}" alt="Carro 3">
+        </div>
+        <div class="car-info">
+            <h3 class="price">R$ 180.000</h3>
+            <h4 class="car-name">Volkswagen Jetta</h4>
+            <p><span class="icon-placeholder">🗓️</span><strong>Ano:</strong> 2014</p>
+            <p><span class="icon-placeholder">🛣️</span><strong>Km:</strong> 69.000 km</p>
+            <p><span class="icon-placeholder">🎨</span><strong>Cor:</strong> Branco Creatina</p>
+            <p><span class="icon-placeholder">⚡</span><strong>Combustível:</strong> Álcool</p>
+            <button>Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <div class="car-img">
+            <img th:src="@{/img/thanosCar.jpg}" alt="Carro 4">
+        </div>
+        <div class="car-info">
+            <h3 class="price">R$ 1.000.000</h3>
+            <h4 class="car-name">Toyota Tacoma</h4>
+            <p><span class="icon-placeholder">🗓️</span><strong>Ano:</strong> 2000</p>
+            <p><span class="icon-placeholder">🛣️</span><strong>Km:</strong> Metade</p>
+            <p><span class="icon-placeholder">🎨</span><strong>Cor:</strong> Thanos</p>
+            <p><span class="icon-placeholder">⚡</span><strong>Combustível:</strong> Pedras do Infinito</p>
+            <button>Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <div class="car-img">
+            <img th:src="@{/img/U.jpg}" alt="Carro 5">
+        </div>
+        <div class="car-info">
+            <h3 class="price">R$ 1.000</h3>
+            <h4 class="car-name">Fiat U</h4>
+            <p><span class="icon-placeholder">🗓️</span><strong>Ano:</strong> 2000</p>
+            <p><span class="icon-placeholder">🛣️</span><strong>Km:</strong> 1 km</p>
+            <p><span class="icon-placeholder">🎨</span><strong>Cor:</strong> Ciano</p>
+            <p><span class="icon-placeholder">⚡</span><strong>Combustível:</strong> Hopes And Dreams</p>
+            <button>Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <div class="car-img">
+            <img th:src="@{/img/Truck Kun.jpg}" alt="Carro 3">
+        </div>
+        <div class="car-info">
+            <h3 class="price">R$ >8000</h3>
+            <h4 class="car-name">Isekai Father</h4>
+            <p><span class="icon-placeholder">🗓️</span><strong>Ano:</strong> 2014</p>
+            <p><span class="icon-placeholder">🛣️</span><strong>Km:</strong> (+∞) km</p>
+            <p><span class="icon-placeholder">🎨</span><strong>Cor:</strong> Azeitona</p>
+            <p><span class="icon-placeholder">⚡</span><strong>Combustível:</strong> Multiverso</p>
+            <button>Ver Detalhes</button>
+        </div>
+    </div>
+
+
+    <!-- Mais carros... -->
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">
+        <span>SNP CARS</span>
+    </div>
+    <p class="footer-subtitulo">© 2025 SNP Cars. Todos os direitos reservados.</p>
+    <p class="footer-subtitulo">Sua loja de carros usados de confiança.</p>
+</footer>
+
+</body>
+</html>

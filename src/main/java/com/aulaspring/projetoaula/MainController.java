@@ -25,4 +25,8 @@ public class MainController {
         return "vendedores";
     }
 
+    @GetMapping("/catalogo")
+    public String catalogo(){
+        return "catalogo";
+    }
 }
