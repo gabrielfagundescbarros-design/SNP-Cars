@@ -20,4 +20,9 @@ public class MainController {
         return "contato";
     } 
 
+    @GetMapping("/vendedores")
+    public String vendedores(){
+        return "vendedores";
+    }
+
 }

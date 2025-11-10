@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedores - SNP Cars</title>
+    <link rel="stylesheet" th:href="@{/css/vendedores.css}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-logo dynalight-regular">SNP CARS</div>
+    <nav class="nav-links">
+        <a th:href="@{/}">Início</a>
+        <a th:href="@{/catalogo}">Catálogo</a>
+        <a th:href="@{/vendedores}">Vendedores</a>
+        <a th:href="@{/contato}" class="nav-button">Contato</a>
+    </nav>
+</header>
+
+<!-- HEADER DA PÁGINA -->
+<section class="vendedores-header">
+    <h2>Nossa Equipe de Vendedores</h2>
+    <p>Profissionais experientes prontos para ajudá-lo a encontrar o carro ideal</p>
+</section>
+
+<!-- GRID DE VENDEDORES -->
+<section class="vendedores-grid">
+    <!-- Vendedor 1 -->
+    <div class="vendedor-card">
+        <div class="vendedor-img">
+            <img th:src="@{/img/Eu.jpeg}" alt="Eu">
+        </div>
+        <div class="vendedor-info">
+            <h3>Gabriel Fagundes</h3>
+            <p class="cargo">Vendedor Sênior</p>
+            <p class="especialidade">Carros Esportivos</p>
+            <div class="contato-info">
+                <span>📞 (13) 98850-0866</span>
+                <span>✉️ gabrielfagundescbarros@snpcars.com.br</span>
+            </div>
+            <button>Entrar em Contato</button>
+        </div>
+    </div>
+
+    <!-- Vendedor 2 -->
+    <div class="vendedor-card">
+        <div class="vendedor-img">
+            <img th:src="@{/img/Zende.jpeg}" alt="Zende">
+        </div>
+        <div class="vendedor-info">
+            <h3>Raphael Resende</h3>
+            <p class="cargo">Consultor de Vendas</p>
+            <p class="especialidade">SUVs e Sedans</p>
+            <div class="contato-info">
+                <span>📞 (13) 98841-2917</span>
+                <span>✉️ raphaelladislaumresende@snpcars.com.br</span>
+            </div>
+            <button>Entrar em Contato</button>
+        </div>
+    </div>
+
+    <!-- Vendedor 3 -->
+    <div class="vendedor-card">
+        <div class="vendedor-img">
+            <img th:src="@{/img/Japa.jpeg}" alt="Japa">
+        </div>
+        <div class="vendedor-info">
+            <h3>Felipe Eto</h3>
+            <p class="cargo">Gerente de Vendas</p>
+            <p class="especialidade">Carros de Luxo</p>
+            <div class="contato-info">
+                <span>📞 (13) 99783-7898</span>
+                <span>✉️ felipeetogmartins@snpcars.com.br</span>
+            </div>
+            <button>Entrar em Contato</button>
+        </div>
+    </div>
+
+    <!-- Vendedor 4 -->
+    <div class="vendedor-card">
+        <div class="vendedor-img">
+            <img th:src="@{/img/vendedor4.jpg}" alt="Vendedor 4">
+        </div>
+        <div class="vendedor-info">
+            <h3>Vendedor 4</h3>
+            <p class="cargo">Vendedor</p>
+            <p class="especialidade">Importados</p>
+            <div class="contato-info">
+                <span>📞 (11) 98765-4444</span>
+                <span>✉️ vendedor4@snpcars.com.br</span>
+            </div>
+            <button>Entrar em Contato</button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">
+        <span>SNP CARS</span>
+    </div>
+    <p class="footer-subtitulo">© 2025 SNP Cars. Todos os direitos reservados.</p>
+    <p class="footer-subtitulo">Sua loja de carros usados de confiança.</p>
+</footer>
+
+</body>
+</html>
