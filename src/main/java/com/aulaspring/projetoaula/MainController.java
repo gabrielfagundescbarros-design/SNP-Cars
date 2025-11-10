@@ -15,35 +15,9 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping("/pagina1")
-    public String pagina1(){
-        return "pagina1";
-    }
-
-    @GetMapping("/pagina2")
-    public String pagina2(){
-        return "pagina2";
-    }
-
-    @GetMapping("/pagina3")
-    public String pagina3(){
-        return "pagina3";
-    }
-
-    @GetMapping("/calc")
-    public String calc(Model model){
-        model.addAttribute("calc", new Calculadora(0, 0));
-        return "calc";
-    }
-
-    @PostMapping("/calc")
-    public String calcular(@ModelAttribute("calc") Calculadora calc,
-                           Model model){
-                           
-        double res = calc.getNum1() + calc.getNum2();
-        model.addAttribute("calc", calc);
-        model.addAttribute("res", res);
-        return "calc";
-    }
+    @GetMapping("/contato")
+    public String contato(){
+        return "contato";
+    } 
 
 }

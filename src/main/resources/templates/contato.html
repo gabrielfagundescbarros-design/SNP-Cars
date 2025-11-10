@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - SNP Cars</title>
+    <link rel="stylesheet" th:href="@{/css/contato.css}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-logo dynalight-regular">SNP CARS</div>
+    <nav class="nav-links">
+        <a th:href="@{/}">Início</a>
+        <a th:href="@{/catalogo}">Catálogo</a>
+        <a th:href="@{/sobre}">Sobre Nós</a>
+        <a th:href="@{/contato}" class="nav-button">Contato</a>
+    </nav>
+</header>
+
+<!-- CONTEÚDO -->
+<div class="contato-page">
+
+    <!-- Header -->
+    <div class="contato-header">
+        <h2>Entre em Contato</h2>
+        <p>Estamos prontos para atendê-lo</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="contato-grid">
+
+        <!-- Informações de Contato -->
+        <div class="contato-card contato-info">
+            <h3>Informações de Contato</h3>
+
+            <div class="contato-item">
+                <div class="icon-balao">
+                    <img th:src="@{/img/telefone.png}" alt="Telefone">
+                </div>
+                <div>
+                    <h4>Telefone</h4>
+                    <p>(11) 98765-4321</p>
+                    <p>(11) 3456-7890</p>
+                </div>
+            </div>
+
+            <div class="contato-item">
+                <div class="icon-balao">
+                    <img th:src="@{/img/email.png}" alt="Email">
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <p>contato@snpcars.com.br</p>
+                    <p>vendas@snpcars.com.br</p>
+                </div>
+            </div>
+
+            <div class="contato-item">
+                <div class="icon-balao">
+                    <img th:src="@{/img/endereco.png}" alt="Endereço">
+                </div>
+                <div>
+                    <h4>Endereço</h4>
+                    <p>Av. Paulista, 1000</p>
+                    <p>São Paulo - SP, 01310-100</p>
+                </div>
+            </div>
+
+            <div class="contato-item">
+                <div class="icon-balao">
+                    <img th:src="@{/img/relogio.png}" alt="Horário">
+                </div>
+                <div>
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Sexta: 9h às 19h</p>
+                    <p>Sábado: 9h às 14h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulário de Contato -->
+        <div class="contato-card contato-form">
+            <h3>Envie uma Mensagem</h3>
+            <form>
+                <label>Nome</label>
+                <input type="text" placeholder="Seu nome completo">
+
+                <label>Email</label>
+                <input type="email" placeholder="seu@email.com">
+
+                <label>Telefone</label>
+                <input type="tel" placeholder="(11) 98765-4321">
+
+                <label>Mensagem</label>
+                <textarea placeholder="Como podemos ajudá-lo?"></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Redes Sociais -->
+    <div class="contato-card contato-social">
+        <h3>Nossas Redes Sociais</h3>
+        <div class="social-icons">
+            <a href="#" class="icon-balao">
+                <img th:src="@{/img/facebook.png}" alt="Facebook">
+            </a>
+            <a href="#" class="icon-balao">
+                <img th:src="@{/img/instagram.png}" alt="Instagram">
+            </a>
+            <a href="#" class="icon-balao">
+                <img th:src="@{/img/whatsapp.png}" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">
+        <span>SNP CARS</span>
+    </div>
+    <p class="footer-subtitulo">© 2025 SNP Cars. Todos os direitos reservados.</p>
+    <p class="footer-subtitulo">Sua loja de carros usados de confiança.</p>
+</footer>
+
+</body>
+</html>

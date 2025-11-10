@@ -112,6 +112,13 @@ body {
   color: black;
 }
 
+.icon-circle img {
+    max-width: 50%;       /* ajusta a largura da imagem para caber no círculo */
+    max-height: 50%;      /* ajusta a altura da imagem proporcionalmente */
+    object-fit: contain;  /* mantém proporção sem distorcer */
+}
+
+
 /* NAVBAR */
 .navbar {
   position: fixed;
@@ -168,4 +175,31 @@ body {
 
 .hero {
     padding-top: 70px; 
+}
+
+/* FOOTER */
+.footer {
+    background: #111; /* fundo preto */
+    color: #aaa;
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    margin-top: 80px;
+}
+
+/* Mantém o logo e o subtítulo iguais */
+.footer-logo {
+    display: inline-block;
+    background: #d81515; /* círculo vermelho da logo */
+    border-radius: 50px;
+    padding: 15px 50px;
+    color: black;
+    font-family: "Dynalight", cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.footer-subtitulo {
+    color: #999;
+    margin: 5px 0;
+    font-size: 16px;
 }

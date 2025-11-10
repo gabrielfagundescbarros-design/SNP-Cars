@@ -5,6 +5,18 @@
     <link rel="stylesheet" th:href="@{/css/index.css}">
 </head>
 
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-logo dynalight-regular">SNP CARS</div>
+
+    <nav class="nav-links">
+        <a th:href="@{/}">Início</a>
+        <a th:href="@{/catalogo}">Catálogo</a>
+        <a th:href="@{/sobre}">Sobre Nós</a>
+        <a th:href="@{/contato}" class="nav-button">Contato</a>
+    </nav>
+</header>
+
 <body>
 
     <!-- HERO -->
@@ -22,37 +34,43 @@
     <section class="features">
         
         <div class="feature-card">
-            <div class="icon-circle">🚗</div>
+            <div class="icon-circle">
+                <img th:src="@{/img/carrinho.png}" alt="Carrinho">
+            </div>
             <h3>Seleção Premium</h3>
             <p>Carros revisados e com histórico garantido.</p>
         </div>
 
         <div class="feature-card">
-            <div class="icon-circle">⭐</div>
+            <div class="icon-circle">
+                <img th:src="@{/img/verificado.png}" alt="Verificado">
+            </div>
             <h3>Confiança & Transparência</h3>
             <p>Você sabe exatamente o que está comprando.</p>
         </div>
 
         <div class="feature-card">
-            <div class="icon-circle">💰</div>
+            <div class="icon-circle">
+                <img th:src="@{/img/dinheiro.png}" alt="Dinheiro">
+            </div>
             <h3>Melhor Preço</h3>
             <p>Negociações justas e acessíveis ao seu bolso.</p>
         </div>
 
     </section>
 
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">
+        <span>SNP CARS</span>
+    </div>
+    <p class="footer-subtitulo">© 2025 SNP Cars. Todos os direitos reservados.</p>
+    <p class="footer-subtitulo">Sua loja de carros usados de confiança.</p>
+</footer>
+
 </body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="nav-logo dynalight-regular">SNP CARS</div>
 
-    <nav class="nav-links">
-        <a th:href="@{/}">Início</a>
-        <a th:href="@{/catalogo}">Catálogo</a>
-        <a th:href="@{/sobre}">Sobre Nós</a>
-        <a th:href="@{/contato}" class="nav-button">Contato</a>
-    </nav>
-</header>
+
 
 </html>
